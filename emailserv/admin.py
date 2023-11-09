@@ -1,11 +1,11 @@
 from django.contrib import admin
 
-from emailserv.models import EmailDistribution, Message
+from emailserv.models import Emailserv, Message
 
 
 # Register your models here.
-@admin.register(EmailDistribution)
-class EmailDistributionAdmin(admin.ModelAdmin):
+@admin.register(Emailserv)
+class EmailservAdmin(admin.ModelAdmin):
     fields = ('emails', 'time', 'period', 'message')
 
 
